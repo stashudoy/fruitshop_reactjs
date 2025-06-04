@@ -20,13 +20,6 @@ const CartProduct = (props) => {
       
       
       </div>
-
-      
-
-   
-
-
-
       </div>  
     )
   }

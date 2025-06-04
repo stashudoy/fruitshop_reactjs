@@ -55,7 +55,12 @@ export let addProduct = () => {
 export let dellProduct = (id) => {
   console.log("dellProduct")
   console.log(id)
-  state.cart = state.cart.filter(id => state.cart.id === id)
+  // state.cart = state.cart.filter(id => state.cart.id === id)
+  const idToDelete = id
+  const index = state.cart.findIndex(i => i.id === idToDelete)
+  if(index !== -1 ) {
+    state.cart.splice(index, 1)
+  }
   rerenderEntireTree(state)
 }
 
