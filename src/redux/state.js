@@ -40,16 +40,18 @@ let state = {  // создаем состояние в виде объекта
 
 window.state = state
 
-export let addProduct = () => {
+export let addProduct = (myid) => {
   let id = 0
+  const idOfItems = myid-1
+  let item = state.items[idOfItems]
   let product =       {
     id: state.cart.length,
-    title: 'lemon',
-    img: 'lemon.jpg',
+    title: item.title,
+    img: item.img,
     price: 1.99
   }
   state.cart.push(product)
-
+  rerenderEntireTree(state)
 }
 
 export let dellProduct = (id) => {

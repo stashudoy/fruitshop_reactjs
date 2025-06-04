@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CartProduct from './CartProduct'
+import s from './Cart.module.css'
 
 
 
@@ -13,7 +14,7 @@ const Cart = (props) => {
 
   let cartElements = props.cart.map(el => (<CartProduct key={el.id}  img={el.img} title={el.title} id={el.id} price={el.price} dellProduct={props.dellProduct}/>))
     return (
-      <div>
+      <div className={s.h1tag}>
           <div><h1>{cartName}</h1></div>
           {cartElements}
           <div>Цена:{Sum}</div>

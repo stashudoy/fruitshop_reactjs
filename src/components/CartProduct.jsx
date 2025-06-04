@@ -4,7 +4,6 @@ import s from './CartProduct.module.css'
 const CartProduct = (props) => {
 
     let dellProduct = () => {
-        console.log(props.id)
         props.dellProduct(props.id)
     }
 

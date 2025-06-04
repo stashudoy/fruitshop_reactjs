@@ -4,7 +4,8 @@ import s from './Product.module.css'
 const Product = (props) => {
 
   let addProduct = () => {
-        props.addProduct()
+        props.addProduct(props.id)
+        console.log(props.id)
   }
 
     return (
