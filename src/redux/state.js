@@ -1,3 +1,10 @@
+let rerenderEntireTree = () => {
+  console.log('state changed')
+}
+
+
+
+
 let state = {  // создаем состояние в виде объекта
 
 
@@ -48,7 +55,12 @@ export let addProduct = () => {
 export let dellProduct = (id) => {
   console.log("dellProduct")
   console.log(id)
-  //state.cart = state.cart.filter(id => state.cart.id === id)
+  state.cart = state.cart.filter(id => state.cart.id === id)
+  rerenderEntireTree(state)
 }
+
+ export const subscribe =(observer) =>  {
+    rerenderEntireTree = observer
+  }
 
 export default state
