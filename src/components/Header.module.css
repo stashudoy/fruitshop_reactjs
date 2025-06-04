@@ -1,0 +1,24 @@
+header ul.link {
+    float: right;
+    list-style: none;    
+    
+  }
+
+  a {
+    text-decoration: none;
+    color: green;
+  }
+  
+  header ul.link li{
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+    text-decoration: none;
+  }
+  
+  header ul.link li:hover{
+    color: green;
+    opacity: 0.5;
+  
+  }

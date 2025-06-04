@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import { FaShoppingCart } from "react-icons/fa"
 import Order from './Order'
+import { NavLink } from 'react-router-dom'
+import s from './Header.module.css'
 
 
 const showOrders = (props) => {
@@ -25,7 +27,12 @@ export default function Header(props) {
      <header>
         <div>
             <span className='logo'>Fruit Shop</span>
-            <ul className='nav'>
+            <ul className={s.link}>
+                <li><NavLink to="/">Главная</NavLink></li>
+                <li><NavLink to="/about">О нас</NavLink></li>
+                <li><NavLink to="/contacts">Контакты</NavLink></li>
+                <li><NavLink to="/cart">Корзина</NavLink></li>
+                <li><NavLink to="/shop">Магазин</NavLink></li>
 
                 </ul>
                 <FaShoppingCart onClick={()=> setCartOpen(cartOpen = !cartOpen)} className={`shop-cart-button ${cartOpen && 'active'}`}/>  
