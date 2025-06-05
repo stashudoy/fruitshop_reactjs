@@ -13,7 +13,7 @@ const CartProduct = (props) => {
         
       <div>
         
-        <img src ={"./img/" + props.img}/><span>{props.title}<b><span className={s.price}>${props.price}</span></b></span>
+        <img src ={"https://stashudoy.github.io/fruitshop_reactjs/img/" + props.img}/><span>{props.title}<b><span className={s.price}>${props.price}</span></b></span>
       
       <button  onClick={dellProduct}>Удалить</button>
       
