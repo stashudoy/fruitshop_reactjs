@@ -2,3 +2,11 @@
     height: 100px;
 
 }
+
+.cartProduct {
+    margin-bottom: 50px;
+}
+
+.cartProduct span {
+    margin-left: 20px;
+}

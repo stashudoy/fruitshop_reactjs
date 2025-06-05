@@ -13,8 +13,8 @@ let state = {  // создаем состояние в виде объекта
     items: [
       {
         id: 1,
-        title: 'apple',
-        img: 'apple.jpeg',
+        title: 'apple ',
+        img: 'apple2.jpeg',
         desc: 'Green apple',
         category: 'fruits',
         price: 0.99
@@ -22,15 +22,15 @@ let state = {  // создаем состояние в виде объекта
       {
         id: 2,
         title: 'orange',
-        img: 'orange.jpg',
+        img: 'orange612.jpg',
         desc: 'Orange',
         category: 'fruits',
         price: 1.29
       },
       {
         id: 3,
-        title: 'lemon',
-        img: 'lemon.jpg',
+        title: 'lemon ',
+        img: 'lemon612.jpg',
         desc: 'Lemon',
         category: 'fruits',
         price: 1.99
@@ -48,7 +48,7 @@ export let addProduct = (myid) => {
     id: state.cart.length,
     title: item.title,
     img: item.img,
-    price: 1.99
+    price: item.price
   }
   state.cart.push(product)
   rerenderEntireTree(state)

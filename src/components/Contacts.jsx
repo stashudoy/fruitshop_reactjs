@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
+import { FaMobileAlt } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 import s from './Contacts.module.css'
 const Contacts = () =>  {
     return (
         <div className={s.contacts}>
-        <h3>Контакты</h3>
-        <p><b>Mail:</b> stashudoy@mail.ru</p>
-       <p><b>Телефон:</b> +7(910)192-59-01</p>
-       <p><b>Станислав</b></p>
+        <h1>Контакты</h1>
+        <p><b>Developer: Станислав</b></p>
+        <div><img src=""></img></div>
+        <p><b><FaMobileAlt/></b><span>+7(910)192-59-01</span> </p>
+        <p><b><CiMail/></b><span>stashudoy@mail.ru</span>  </p>
+       
+       
   </div>
     )
 }

@@ -17,7 +17,7 @@ const Cart = (props) => {
       <div className={s.h1tag}>
           <div><h1>{cartName}</h1></div>
           {cartElements}
-          <div>Цена:{Sum}</div>
+          <div ><b><span className={s.toPay}>К оплате: ${new Intl.NumberFormat().format(Sum)}</span></b></div>
       </div>
     )
   }

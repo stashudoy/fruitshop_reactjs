@@ -13,7 +13,7 @@ const CartProduct = (props) => {
         
       <div>
         
-        {props.id}<img src ={"./img/" + props.img}/>{props.title}<b>${props.price}</b>
+        <img src ={"./img/" + props.img}/><span>{props.title}<b><span className={s.price}>${props.price}</span></b></span>
       
       <button  onClick={dellProduct}>Удалить</button>
       
