@@ -18,7 +18,7 @@ const App = (props) =>  {
     <div className='wrapper'>
         <Header  />
       
-        <Routes>
+        <Routes basename="/fruitshop_reactjs/">
           <Route path='/about' element={<AboutUs/>} />
           <Route path='/contacts' element={<Contacts/>} />
           <Route path='/cart' element={<Cart cart={props.state.cart} dellProduct={props.dellProduct}/>} />
