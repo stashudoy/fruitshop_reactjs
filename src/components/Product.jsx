@@ -13,7 +13,7 @@ const Product = (props) => {
      
         
         <div className='item'>
-        /*<img src ={"https://stashudoy.github.io/fruitshop_reactjs/img/" + props.img}/>
+        <img src ={"https://stashudoy.github.io/fruitshop_reactjs/img/" + props.img}/>
         <div>
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
