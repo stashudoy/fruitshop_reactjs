@@ -7,7 +7,6 @@ const Contacts = () =>  {
         <div className={s.contacts}>
         <h1>Контакты</h1>
         <p><b>Developer: Станислав</b></p>
-        <div><img src=""></img></div>
         <p><b><FaMobileAlt/></b><span>+7(910)192-59-01</span> </p>
         <p><b><CiMail/></b><span>stashudoy@mail.ru</span>  </p>
        
